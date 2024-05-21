@@ -1,0 +1,7 @@
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="!loading">
+  <ul>
+    <li *ngFor="let item of data">{{ item.name }}</li>
+  </ul>
+  <button (click)="clearCache()">Clear Cache</button>
+</div>
